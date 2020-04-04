@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<title>Test APP </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<body class="w3-light-grey">
+{% include "head.html" %}
+<body>
+<div id="page-container">
+    {% include "header.html" %}
+    <div id="content-wrap">
+        <div class="container-fluid">
+            <div class="w3-col l1">
+                <div class="col-sm-2">
+                    {% block sidebar %}<ul class="sidebar-nav"></ul>{% endblock %}
+                </div>
+            </div>
+            <div class="w3-col l11">
+
+                {% block content %}{% endblock %}
+
+            </div>
+        </div>
+        {% include "footer.html" %}
+    </div>
+</body>
+</html>

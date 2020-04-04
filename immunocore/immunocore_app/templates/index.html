@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Test APP</h1>
+  <p>Welcome to the test APP</p>
+  <h2>Records</h2>
+  <p>We currently have:</p>
+  <ul>
+    <li><strong>Genes: </strong> <a href="{% url 'genes' %}"> {{ gene_counts }} </a></li>
+  </ul>
+{% endblock %}

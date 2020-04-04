@@ -1,0 +1,2 @@
+class GeneValidationException(Exception):
+    pass

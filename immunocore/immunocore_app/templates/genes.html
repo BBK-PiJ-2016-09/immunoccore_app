@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <!-- Blog entry -->
+<!-- Grid -->
+
+<!-- Blog entries -->
+
+  <h1>Genes </h1>
+
+</div>
+  {% if gene_list %}
+  <ul>
+    {% for gene in gene_list %}
+      <li>
+        <a href="{{ gene.get_absolute_url }}">{{ gene.name }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+    <p>No genes yet</p>
+  {% endif %}
+{% endblock %}

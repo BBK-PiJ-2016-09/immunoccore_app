@@ -1,0 +1,1 @@
+cd /immunocore && python manage.py runserver
